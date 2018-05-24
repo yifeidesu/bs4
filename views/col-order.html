@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cell Position</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <style>
+        .container {
+            border: 2px solid salmon;
+        }
+
+        .col-4,
+        .col-1,
+        .col {
+            border: 1px solid green;
+            background: palegreen;
+        }
+
+        .row {
+            border: 1px solid blue;
+
+        }
+
+        .thick-row {
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h6>.offset-shares#</h6>
+    <p>certain number of shares before this col.</p>
+    <div class="container">
+        <div class="row thick-row">
+            <div class="col-1">col-1</div>
+            <div class="col">col</div>
+        </div>
+        <div class="row thick-row">
+            <div class="col offset-2">col offset-2</div>
+            <div class="col">col</div>
+        </div>
+
+    </div>
+
+    <h6>.offset-size-shares#</h6>
+    <div class="container">
+        <div class="row thick-row">
+            <div class="col-1">col-1</div>
+            <div class="col">col</div>
+        </div>
+        <div class="row thick-row">
+            <div class="col offset-md-2">col offset-md-2<br>
+            only when larger than md will show that offset.
+            </div>
+            <div class="col">col</div>
+        </div>
+
+    </div>
+
+    <h6>.order-size-order#</h6>
+    <p>only for this size or larger, comply this order.
+        <br> or smaller, use default order.
+        <br> when use default order, the elements w/o order go first.
+    </p>
+    <div class="container">
+        <div class="row thick-row">
+            <div class="col">col</div>
+            <div class="col">col</div>
+        </div>
+        <div class="row thick-row">
+            <div class="col order-md-10">order-md-10</div>
+            <div class="col order-2">order-2</div>
+            <div class="col order-md-8">order-md-8</div>
+        </div>
+    </div>
+
+    <h6>.order-order#</h6>
+    <div class="container">
+        <div class="row thick-row">
+            <div class="col">col</div>
+            <div class="col">col</div>
+        </div>
+        <div class="row thick-row">
+            <div class="col order-10">order 10</div>
+            <div class="col order-2">order-2</div>
+            <div class="col order-2">order-8</div>
+        </div>
+    </div>
+</body>

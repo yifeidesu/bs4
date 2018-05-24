@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cell Position</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <style>
+        .container {
+            border: 2px solid salmon;
+        }
+
+        .col-4, .col {
+            border: 1px solid green;
+            background: palegreen;
+        }
+
+        .row {
+            border: 1px solid blue;
+            background: moccasin;
+        }
+
+        .thick-row {
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h6>align-self-start</h6>
+    <div class="container">
+        <div class="row thick-row">
+            <div class="col align-self-start">align-self-start</div>
+            <div class="col">col</div>
+        </div>
+        <div class="row thick-row">
+            <div class="col">col</div>
+            <div class="col">col</div>
+        </div>
+    </div>
+
+    <h6>base</h6>
+    <div class="container">
+        <div class="row thick-row">
+            <div class="col">col</div>
+            <div class="col">col</div>
+        </div>
+        <div class="row thick-row">
+            <div class="col">col</div>
+            <div class="col">col</div>
+        </div>
+    </div>
+
+
+
+
+    <h6>align-items-start,center,end</h6>
+
+    <div class="container">
+        <div class="row thick-row justify-content-between align-items-start">
+            <div class="col-4 ">
+                justify-content-between
+                <br> align-items-start
+            </div>
+            <div class="col-4">
+                justify-content-between
+                <br> align-items-start
+            </div>
+        </div>
+        <div class="row thick-row justify-content-between align-items-center">
+            <div class="col-4">
+                justify-content-between
+            </div>
+            <div class="col-4">
+                justify-content-between
+            </div>
+        </div>
+        <div class="row thick-row justify-content-between align-items-end">
+            <div class="col-4">
+                justify-content-between
+            </div>
+            <div class="col-4">
+                justify-content-between
+            </div>
+        </div>
+    </div>
+
+    <h6>justify-content-start</h6>
+    <div class="row justify-content-start ">
+        <div class="col-2 ">
+            justify-content-start
+        </div>
+
+        <div class="col-2 ">
+            justify-content-start
+        </div>
+    </div>
+
+    <h6>justify-content-end</h6>
+    <div class="row justify-content-end " style="background: moccasin ">
+        <div class="col-2 " style="background: palegreen ">
+            justify-content-end
+        </div>
+
+        <div class="col-2 " style="background: palegreen ">
+            justify-content-end
+        </div>
+    </div>
+
+    <h6>justify-content-between</h6>
+    <div class="row justify-content-between " style="background: moccasin ">
+        <div class="col-2 " style="background: palegreen ">
+            justify-content-between
+        </div>
+
+        <div class="col-2 " style="background: palegreen ">
+            justify-content-between
+        </div>
+    </div>
+
+    <h6>justify-content-around</h6>
+    <div class="row justify-content-around " style="background: moccasin ">
+        <div class="col-2 " style="background: palegreen ">
+            justify-content-around
+        </div>
+
+        <div class="col-2 " style="background: palegreen ">
+            justify-content-around
+        </div>
+    </div>
+
+    <h6>justify-content-center</h6>
+    <div class="row justify-content-center " style="background: moccasin ">
+        <div class="col-2 " style="background: palegreen ">
+            justify-content-center
+        </div>
+
+        <div class="col-2 " style="background: palegreen ">
+            justify-content-center
+        </div>
+    </div>
+
+
+</body>
+
+</html>

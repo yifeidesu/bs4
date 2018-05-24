@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Grid System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <style>
+        .nav {
+            font-weight: 600;
+        }
+
+        .jumbotron {
+            background: palegreen;
+        }
+
+        #topbar {
+            background: paleturquoise;
+
+        }
+
+        body {
+            padding-top: 70px;
+            font-weight: 500;
+        }
+
+        div p {
+            color: palevioletred;
+            font-weight: 600;
+        }
+
+        #nav-items {
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav id='topbar' class="navbar navbar-expand-lg fixed-top">
+        <a class="navbar-brand" href="#note">
+            <i class="fas fa-images"></i> pics</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div id='nav-items' class="navbar-nav navbar-fixed-top">
+                <a class="nav-item nav-link " href="#">Happy
+
+                </a>
+                <a class="nav-item nav-link" href="#">Love</a>
+                <a class="nav-item nav-link" href="#">Peace</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id='main-body' class="container w-75">
+
+        <!-- JUMBOTRON -->
+        <div class="jumbotron">
+            <h1>pics in grids</h1>
+            <div style="font-size:2em; color:Tomato">
+                <i class="fas fa-camera-retro"></i> fa-camera-retro
+            </div>
+        </div>
+
+        <p>use class img-thumbnail in img tag to let the img fit parent div size.</p>
+
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 col-12 fixed-left">
+                <img class="img-thumbnail" src="https://www.iisd.org/ela/wp-content/themes/iisd-ela/images/background/desktop/01_lake_2.jpg"
+                    alt="an image">
+                <p>
+                    <i class="fas fa-paw"></i> Beautiful Lake</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 fixed-left">
+                <img class="img-thumbnail" src="https://www.iisd.org/ela/wp-content/themes/iisd-ela/images/background/desktop/01_lake_2.jpg"
+                    alt="an image">
+                <p>
+                    <i class="fas fa-frog"></i> Beautiful Lake</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 fixed-left">
+                <img class="img-thumbnail" src="https://www.iisd.org/ela/wp-content/themes/iisd-ela/images/background/desktop/01_lake_2.jpg"
+                    alt="an image">
+                <p>
+                    <i class="fas fa-kiwi-bird"></i> Beautiful Lake</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 fixed-left">
+                <img class="img-thumbnail" src="https://www.iisd.org/ela/wp-content/themes/iisd-ela/images/background/desktop/01_lake_2.jpg"
+                    alt="an image">
+                <p>
+                    <i class="fas fa-paw"></i> Beautiful Lake</p>
+            </div>
+
+            <div id='link' class="col-lg-4 col-md-6 col-12 fixed-left">
+                <img class="img-thumbnail" src="https://www.iisd.org/ela/wp-content/themes/iisd-ela/images/background/desktop/01_lake_2.jpg"
+                    alt="an image">
+                <p>
+                    <i class="fas fa-frog"></i> Beautiful Lake</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 fixed-left">
+                <img class="img-thumbnail" src="https://www.iisd.org/ela/wp-content/themes/iisd-ela/images/background/desktop/01_lake_2.jpg"
+                    alt="an image">
+                <p>
+                    <i class="fas fa-kiwi-bird"></i> Beautiful Lake</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 fixed-left">
+                <img class="img-thumbnail" src="https://www.iisd.org/ela/wp-content/themes/iisd-ela/images/background/desktop/01_lake_2.jpg"
+                    alt="an image">
+                <p>
+                    <i class="fas fa-paw"></i> Beautiful Lake</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 fixed-left">
+                <img class="img-thumbnail" src="https://www.iisd.org/ela/wp-content/themes/iisd-ela/images/background/desktop/01_lake_2.jpg"
+                    alt="an image">
+                <p>
+                    <i class="fas fa-frog"></i> Beautiful Lake</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-12 fixed-left">
+                <img class="img-thumbnail" src="https://www.iisd.org/ela/wp-content/themes/iisd-ela/images/background/desktop/01_lake_2.jpg"
+                    alt="an image">
+                <p>
+                    <i class="fas fa-kiwi-bird"></i> Beautiful Lake</p>
+            </div>
+        </div>
+
+        <p id='note' style="color: darkblue">
+            <hr>
+            1. pic in gird - thumbnail <span>use <kbd>img-thumbnail</kbd>
+                 in <kbd>img</kbd> tag to make image fit parent col size.</span> <br>
+
+            2. icon - use of icons <span>use empty content <kbd>i</kbd> tag, with class of <kbd>fas fa-*</kbd>. * is name of icon.</span> <br>
+
+            3. fix navbar - fixed navbar <span>add class <kbd>fixed-top</kbd> to the div of class <kbd>navbar</kbd> </span>
+
+        </p>
+    </div>
+</body>

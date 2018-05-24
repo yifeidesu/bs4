@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Grid System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+</head>
+
+<body>
+    <div class="jumbotron" style='text-align: center;'>
+        <h1 class="display-4">BS GRID</h1>
+        <p class="lead">
+            .row .col
+        </p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <div class="row text-capitalize" style='border:none;'>
+            <p>
+                <a href="#col-width">Width</a>
+            </p>
+            <p>
+                <a href="#col-adj">Breakpoint</a>
+            </p>
+            <p>
+                <a href="views/vertical-align.html">vertical align</a>
+            </p>
+            <p>
+                <a href="views/pics.html">Pics in Grid</a>
+            </p>
+        </div>
+    </div>
+
+    <!--  UNDER JUMBOTRON    -->
+    <h6>One cell has multiple .col classes</h6>
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-2" style="background: palevioletred">
+            col-sm-12 col-md-6 col-lg-2
+        </div>
+    </div>
+
+    <!-- .col  -->
+    <h6>.col w/o define responsive points and shares</h6>
+    <p>cols on the same row will take up the whole row and each will take equal shares.</p>
+
+    <div class="row">
+        <div class="col">col</div>
+        <div class="col">col</div>
+        <div class="col">col</div>
+        <div class="col">col</div>
+        <div class="col">col</div>
+    </div>
+
+    <div class="row">
+
+        <div class="col">col</div>
+        <div class="col">col</div>
+        <div class="col">col</div>
+    </div>
+
+
+    <!-- SHOW DIFF WIDTH OF COLS -->
+    <h5 id="col-width">Width</h5>
+    <h6>col-sm-number
+        <span>suffix number means how many unit cols of with it takes</span>
+    </h6>
+
+    <div>
+        <div class="col-sm-1">col-sm-1</div>
+        <div class="col-sm-2">col-sm-2</div>
+        <div class="col-sm-3">col-sm-3</div>
+        <div class="col-sm-4">col-sm-4</div>
+        <div class="col-sm-5">col-sm-5</div>
+        <div class="col-sm-6">col-sm-6</div>
+        <div class="col-sm-7">col-sm-7</div>
+        <div class="col-sm-8">col-sm-8</div>
+        <div class="col-sm-9">col-sm-9</div>
+        <div class="col-sm-10">col-sm-10</div>
+        <div class="col-sm-11">col-sm-11</div>
+        <div class="col-sm-12">col-sm-12</div>
+    </div>
+
+
+    <H2>2 Responsiveness</H2>
+
+    <h5 class="text-capitalize">2.1 same Responsive point, different widths</h5>
+    <p>Change screen width to see items inlineness change with screen width.
+        <br> Those divs are of same Responsive points but different widths.
+        <br> Although those divs are of different widths, at a certain breakpoint, all of them collapse, regardless of widths.
+    </p>
+
+    <!-- 2.1 SAME RESPONSIVE POINT, DIFF WIDTH -->
+    <div class="row" style='background:palegreen'>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+        <div class="col-md-1">col-md-1</div>
+    </div>
+
+    <div class="row" style='background:paleturquoise'>
+        <div class="col-md-2">col-md-2</div>
+        <div class="col-md-2">col-md-2</div>
+        <div class="col-md-2">col-md-2</div>
+        <div class="col-md-2">col-md-2</div>
+        <div class="col-md-2">col-md-2</div>
+        <div class="col-md-2">col-md-2</div>
+    </div>
+
+    <div class="row" style='background:pink'>
+        <div class="col-md-3">col-md-3</div>
+        <div class="col-md-3">col-md-3</div>
+        <div class="col-md-3">col-md-3</div>
+        <div class="col-md-3">col-md-3</div>
+    </div>
+
+    <div class="row" style='background:papayawhip'>
+        <div class="col-md-4">col-md-4</div>
+        <div class="col-md-4">col-md-4</div>
+        <div class="col-md-4">col-md-4</div>
+    </div>
+
+    <div class="row" style='background:azure'>
+        <div class="col-md-6">col-md-6</div>
+        <div class="col-md-6">col-md-6</div>
+    </div>
+
+
+    <!-- 2.2 SAME WIDTH, DIFF BREAKPOINTS -->
+    <h5 id="col-adj" class='text-capitalize'>2.2 Responsive Breakpoint</h5>
+    <p class="text-lowercase text-center" ;>
+        breakpoints: xs, sm, md, lg, xl </br>
+        When width smaller thant breakpoit, the items will collapse to vertical list of items. otherwise inline.
+        <br> betweet each group are of same width with different breakpoints.
+    </p>
+    <div class="row" style="background: cyan">
+        <div class="col-2">col-2</div>
+        <div class="col-2">col-2</div>
+        <div class="col-2">col-2</div>
+        <div class="col-2">col-2</div>
+        <div class="col-2">col-2</div>
+        <div class="col-2">col-2</div>
+    </div>
+
+    <div class="row" style="background: papayawhip">
+        <div class="col-sm-2">col-sm-2</div>
+        <div class="col-sm-2">col-sm-2</div>
+        <div class="col-sm-2">col-sm-2</div>
+        <div class="col-sm-2">col-sm-2</div>
+        <div class="col-sm-2">col-sm-2</div>
+        <div class="col-sm-2">col-sm-2</div>
+    </div>
+
+    <div class="row" style="background:paleturquoise;">
+        <div class="col-md-2">col-md-2</div>
+        <div class="col-md-2">col-md-2</div>
+        <div class="col-md-2">col-md-2</div>
+        <div class="col-md-2">col-md-2</div>
+        <div class="col-md-2">col-md-2</div>
+        <div class="col-md-2">col-md-2</div>
+    </div>
+
+    <div class="row" style="background:palegreen;">
+        <div class="col-lg-2">col-lg-2</div>
+        <div class="col-lg-2">col-lg-2</div>
+        <div class="col-lg-2">col-lg-2</div>
+        <div class="col-lg-2">col-lg-2</div>
+        <div class="col-lg-2">col-lg-2</div>
+        <div class="col-lg-2">col-lg-2</div>
+    </div>
+
+    <div class="row" style="background:pink;">
+        <div class="col-xl-2">col-xl-2</div>
+        <div class="col-xl-2">col-xl-2</div>
+        <div class="col-xl-2">col-xl-2</div>
+        <div class="col-xl-2">col-xl-2</div>
+        <div class="col-xl-2">col-xl-2</div>
+        <div class="col-xl-2">col-xl-2</div>
+    </div>
+
+    <!-- Q list -->
+    <h5>Q List</h5>
+    <p>
+        How about if the width numbers add up larger than 12?
+        <br> - The divs will not show on the same row. As shown below:
+    </p>
+    <div class="row">
+        <div class="col-10">10</div>
+        <div class="col-6">6</div>
+    </div>
+
+</body>
+
+</html>
